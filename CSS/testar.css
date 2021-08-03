@@ -1,0 +1,21 @@
+#div1 {
+  background-color: yellow;
+  }
+ 
+#div2 {
+  background-color: orange;
+  }
+ 
+#div1, #div2 {
+  font-family: Tahoma, Geneva, Helvetica, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+  }
+
+  .center{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+  }

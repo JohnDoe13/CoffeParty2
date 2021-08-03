@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/testar.css">
+</head>
+
+<body>
+
+
+    <!-- <div id="ProductID">
+        <div id="divActivity">
+
+        </div> Select an activity:
+        <select id="myactivity">
+            <option>---Available Activities---</option>
+            <option>Business Event</option>
+            <option>Houseparty</option>
+            <option>Anniversaries</option>
+            <option>Other</option>
+        </select>
+        <br>
+        Select Location:
+        <select id="location">
+            <option>---Location---</option>
+            <option>Las Vegas</option>
+            <option>Phoenix</option>
+            <option>Dallas</option>
+            <option>Miami</option>
+        </select><br>
+
+        <label for="activityarea">Selected Activity:</label><br>
+        <textarea id="activityarea" name="activityarea" rows="4" cols="40" placeholder="activityarea1">
+</textarea><br>
+        <button type="button" onclick="party()">Your Selections</button>
+    </div>
+
+    <select class="browser-default custom-select" id="optional" onclick="Spoon()">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+    </select>
+
+    <input type="text" id="opttext" alt="opttext" placeholder="text goes here"> -->
+    <div class="container">
+        <div class="card-deck">
+                
+            <div class="card bg-primary">
+                <img class="card-img-top" src="/Logo/butfirst.jpeg" class="img-thumbnail" >
+                <div class="card-body text-center">
+                    <h2>Products</h2>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            Choose Product
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Coffemachines</a>
+                            <a class="dropdown-item" href="#">Brand</a>
+                            <a class="dropdown-item" href="#">Cups, plates and more.</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="card bg-warning">
+                <!-- <img class="card-img-top" src="/Logo/butfirst.jpeg" class="img-thumbnail"> -->
+                <div class="card-body text-center">
+                    <!-- <img src="/Images/waterfall.jpeg" class="center" alt="water"> -->
+                    <div class="col-sm-3">
+                        
+                    </div>
+                    <h2>Activity</h2>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="actID">
+                            Select Activity
+                        </button>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Business</a>
+                            <a class="dropdown-item" href="#">Houseparties</a>
+                            <a class="dropdown-item" href="#">Anniversaries</a>
+                            <a class="dropdown-item" href="#">Other</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+        <div class="form-group shadow-textarea">
+            <label for="exampleFormControlTextarea6"></label>
+            <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3"
+                placeholder="Your selections goes here..." id="areaID" disabled></textarea>
+        </div>
+
+    </div>
+    </div>
+<!-- <img src="/images/waterfall.jpeg" class="img-fluid rounded-circle" alt=""/> -->
+    
+
+
+<script src="JavaScript/testar.js"></script>
+    <!-- <div class="container">
+        <div class="card-group">
+            <div class="card bg-primary">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Products</h4>
+
+                </div>
+            </div>
+
+            <div class="card bg-ligth">
+                <div class="card-body text-center">
+                    <h4 class="card-title">Misc</h4>
+                    <p class="card-text">Some text inside the third card</p>
+                </div>
+            </div>
+            <div class="card bg-danger">
+                <div class="card-body text-center">
+                    <h4 class="card-title">More to come...</h4>
+                    <p class="card-text">Some text inside the fourth card</p>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#" onclick="MS()">Microsoft</a>
+                <a class="dropdown-item" href="#">Link 2</a>
+
+            </div>
+        </div>
+        <div class="dropdown" id="fridaydrop">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toogle="dropdown">Drop Me</button>
+            <br>
+            <div class="dropdown-menu">
+                <h5 class="dropdown-header">Select Product</h5>
+                <a class="dropdown-item" href="#">Sel 1</a>
+                <a class="dropdown-item" href="#">Sel 2</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Sel 3</a>
+            </div>
+        </div>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+
+    <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Option: <span class="selection">Option 1</span><span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" id="myid">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+        </ul>
+        <button type="button" class="button btn-btn-info" onclick="friday2()">Hit Me 2</button>
+        <select id="mySelect">
+            <option>Apple</option>
+            <option>Orange</option>
+            <option>Pineapple</option>
+            <option>Banana</option>
+        </select>
+
+        <button type="button" class="button btn-btn-info" onclick="friday()">Hit Me</button>
+        <h2>Dropdowns</h2>
+         <p>The .dropdown class is used to indicate a dropdown menu.</p>
+<p>Use the .dropdown-menu class to actually build the dropdown menu.</p>
+<p>To open the dropdown menu, use a button or a link with a class of .dropdown-toggle and data-toggle="dropdown".</p> -->
+    <!-- <div class="container">
+            <h2>Dropdowns</h2>
+            <p>The .dropdown-header class is used to add headers inside the dropdown menu:</p>
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <div class="dropdown-menu" id="saturday">
+                    <h5 class="dropdown-header">Dropdown header</h5>
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                    <h5 class="dropdown-header">Dropdown header</h5>
+                    <a class="dropdown-item" href="#">Another link</a>
+                </div>
+            </div>
+
+        </div>
+        <button type="button" class="btn btn-info" onClick="sat()">Saturday</button>
+
+    </div>
+ -->
+
+    <!-- <div class="container">
+        <h2>Form control: input</h2>
+        <p>The form below contains two input elements; one of type text and one of type password:</p>
+        <form>
+            <div class="form-group">
+                <label for="usr">Name:</label>
+                <input type="text" class="form-control" id="usr">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd">
+            </div>
+            <button type="button" id="btnId" onClick="harder()">Hit Me</button>
+        </form>
+    </div>
+
+    <p id="buttocks">Hej hopp</p>
+    <button type="button" onClick="swish()" value="swish">Get Value</button>
+    <button type="button" onClick="swisha()" value="swisha">Change Paragraph</button>
+
+    <input type="text" id="slappa" value="slapme">
+    <button type="button" onClick="slapme()">Here we go again</button>
+    <script src="JavaScript/dynamic.js"></script>
+
+    <div class="container">
+        <h2>Card Image</h2>
+        <p>Image at the top (card-img-top):</p>
+        <div class="card" style="width: 200px">
+            <img class="card-img-top" src="/Images/hannibal.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">CEO Hannibal Lecter</h4>
+                <p class="card-text">Join me for a coffee.A moment you won't regret.</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+        </div>
+        <br>
+        <h2>Card Image</h2>
+        <p>Image at the top (card-img-top):</p>
+        <div class="card" style="width:400px">
+            <img class="card-img-top" src="/Images/tedbundy.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">HR Ted Bundy</h4>
+                <p class="card-text">Join me for a coffee.A moment you won't regret.</p>
+                <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+        </div>
+        <br>
+        
+    </div>
+
+    <h2>Card Deck</h2>
+    
+    <div class="card-deck">
+       
+        <div class="card bg-primary">
+            <h4 class="card-title">CEO Hannibal Lecter</h4>
+            <img class="card-img-top" src="/Images/hannibal.jpg" alt="hannibal" style="width:100%">
+            <div class="card-body text-center">
+                <p class="card-text">Join me for a coffee.</p>
+            </div>
+        </div>
+        <div class="card bg-primary">
+            <h4 class="card-title" text-center>HR Ted Bundy</h4>
+            <img class="card-img-top" src="/Images/tedbundy.jpeg" alt="ted" style="width:100%">
+            <div class="card-body text-center">
+                <p class="card-text">A meeting you'll never forget.</p>
+            </div>
+        </div>
+        <div class="card bg-primary">
+            <h4 class="card-title">Finance Jeffrey Dahmer</h4>
+            <img class="card-img-top" src="/Images/jeffrey.jpeg" alt="Card image" style="width:100%">
+            <div class="card-body text-center">
+                <p class="card-text">Let me entertain you.</p>
+            </div>
+        </div>
+        <div class="card bg-primary">
+            <h4 class="card-title">HR Secretary</h4>
+            <img class="card-img-top" src="/Images/aileen.jpeg" alt="Card image" style="width:100%">
+            <div class="card-body text-center">
+                <p class="card-text">Come to mama.</p>
+            </div>
+        </div>
+    
+</div> -->
+
+
+
+</body>
+
+</html>

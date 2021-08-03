@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Products</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/stylished.css">
+    <script src="JavaScript/dynamic.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="#"><img src="/Images/coffee_crop.jpg" alt="logo"></a>
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+                aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarExample01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Help.html">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</head>
+
+<body>
+    <div class="whoweare">
+        <div class="jumbotron">
+            <h1 class="display-4">Products & Activities</h1>
+            <div class="container">
+                <div class="card-group">
+                    <div class="container">
+                        <div class="card-deck">
+
+                            <div class="card bg-primary">
+                                <div class="card-body text-center">
+                                    <h2>Products</h2>
+                                    <div class="dropdown">
+                                        <button type="button" class="btn btn-primary dropdown-toggle"
+                                            data-toggle="dropdown">
+                                            Choose Product
+                                        </button>
+                                        <div class="dropdown-menu" id="productID">
+                                            <a class="dropdown-item" href="#">Coffe Machines</a>
+                                            <a class="dropdown-item" href="#">Brand</a>
+                                            <a class="dropdown-item" href="#">Cups, plates and more</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="card bg-warning">
+                                <div class="card-body text-center">
+                                    <img src="/Images/waterfall.jpeg" class="center" alt="water">
+                                    <h2>Activity</h2>
+                                    <div class="dropdown">
+                                        <button type="button" class="btn btn-primary dropdown-toggle"
+                                            data-toggle="dropdown">
+                                            Select Activity
+                                        </button>
+
+                                        <div class="dropdown-menu" id="anniversaryID">
+                                            <a class="dropdown-item" href="#">Business</a>
+                                            <a class="dropdown-item" href="#">Houseparties</a>
+                                            <a class="dropdown-item" href="#">Anniversaries</a>
+                                            <a class="dropdown-item" href="#">Other</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="form-group shadow-textarea">
+                            <label for="exampleFormControlTextarea6"></label>
+                            <textarea class="form-control z-depth-1" id="exampleFormControlTextarea6" rows="3"
+                                placeholder="Your selections goes here..." disabled></textarea>
+                        </div>
+
+                    </div>
+                    <!-- change design 
+                    <div class="card bg-primary">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Products</h4>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Pick Product
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Coffemachines</a>
+                                    <a class="dropdown-item" href="#">Coffeebrands</a>
+                                    <a class="dropdown-item" href="#">Cups, plates & more</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="w-50card-header" id="card-header-color">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Activities</h4>
+                            <p class="card-text"></p>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Pick Activity
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="activityId"
+                                    onclick="activityID()">
+                                    <a class="dropdown-item" href="#">Business Events</a>
+                                    <a class="dropdown-item" href="#">Houseparties</a>
+                                    <a class="dropdown-item" href="#">Celebrations</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="w-50 card bg-danger">
+                        <div class="card-body text-center">
+
+                            <h4 class="card-title">More to come...</h4>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" disabled>
+                                    Not available at the moment.
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                            <p class="card-text"></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                Select Product:
+                <select id="myactivity">
+                    <option>---Available Products---</option>
+                    <option>Coffeemachines</option>
+                    <option>Coffebrands</option>
+                    <option>Cups, plates and more...</option>
+                    <option>Other</option>
+                </select>
+                <br>
+                Select Retailer:
+                <select id="location">
+                    <option>---Retailer---</option>
+                    <option>Best Buy</option>
+                    <option>Walmart</option>
+                    <option>Publix</option>
+                    <option>Trader Joe's</option>
+                </select><br>
+
+                <label for="activityarea">Product and Retailer:</label><br>
+                <textarea id="activityarea" name="activityarea" rows="4" cols="40" placeholder="activityarea1">
+                </textarea><br>
+                <button type="button" onclick="party()">Your Selections</button>
+
+
+
+            </div>-->
+
+                </div>
+                <div class=productsID></div>
+
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                    crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                    crossorigin="anonymous"></script>
+                <script src="JavaScript/dynamic.js"></script>
+</body>
+<div class="footID">
+    <hr>
+    <footer>
+        <p>Webmaster Nick</p>
+        <p>Java Party &copy 2021</p>
+        <p id="footerDate"></p>
+    </footer>
+    <script>
+        const d = new Date();
+        document.getElementById("footerDate").innerHTML = d;
+    </script>
+</div>
+
+</html>
